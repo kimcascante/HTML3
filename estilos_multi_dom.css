@@ -1,0 +1,42 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .video-wrapper {
+        position: relative;
+        width: 640px;
+    }
+    
+    video {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #5a4e7c;
+        color: white;
+        cursor: pointer;
+    }
+    
+    input[type="range"] {
+        width: 100%;
+    }

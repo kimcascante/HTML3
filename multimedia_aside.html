@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+
+    <link rel="stylesheet" href="/Semana 3/estilos_multi_aside.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Reproductor HTML5</h1>
+        <div class="video-container">
+            <video id="videoPlayer">
+                <source src="/Semana 3/video/Mami 20 Nov.mp4" type="video/mp4">
+                Elemento no soportado
+            </video>
+        </div>
+
+        <aside>
+            <h2>Elige el video a reproducir</h2>
+            <ul>
+                <li><button onclick="changeVideo('/Semana 3/video/Mami 20 Nov.mp4')">Video 1</button></li>
+                <li><button onclick="changeVideo('/Semana 3/video/Mami 20 Nov.mp4')">Video 2</button></li>
+                <li><button>Video 3</button></li>
+
+            </ul>
+        </aside>
+    </main>
+
+
+    <script>
+        function changeVideo(src) {
+            var player = document.getElementById('videoPlayer');
+            player.src = src;
+            player.play();
+        }
+    </script>
+</body>
+
+</html>
